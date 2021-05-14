@@ -1,0 +1,29 @@
+GET http://localhost:3000/tasks
+
+###
+
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "name": "Necesito crear una app",
+    "description": "Utilizabdoi  react native"
+}
+
+###
+GET http://localhost:3000/tasks/PpXbgBWsrdXpQN9iYfcta
+
+### Delete Task
+DELETE  http://localhost:3000/tasks/EEJDwLHR5J-pBlj6-pUOy
+
+### Update Task
+PUT   http://localhost:3000/tasks/WLrHfKEjNYX1h4YwDtaRl
+Content-Type: application/json
+
+{
+    "name" : "mi segunda tarea",
+    "description" : "otra descripcion"
+}
+
+### Count Tasks
+GET    http://localhost:3000/tasks/count
